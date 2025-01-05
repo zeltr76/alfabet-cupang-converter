@@ -1,5 +1,4 @@
-import { localDict } from "./dict.js"
-import { cupangDict } from "./dict.js"
+import { localDict, cupangDict } from "./dict.js"
 
 const getCupangDefinition = (char) => {
     return localDict[char] ?? "<check-your-spelling>"
@@ -10,10 +9,6 @@ const getLocalDefinition = (char) => {
 }
 
 const localAlphabetToCupangAlphabet = (sentence) => {
-    if (!sentence) {
-        console.log("Local is Null")
-        return
-    }
     sentence = sentence.toUpperCase()
     let convertedSentence = ""
     for (let i = 0; i < sentence.length; i++) {
@@ -23,10 +18,6 @@ const localAlphabetToCupangAlphabet = (sentence) => {
 }
 
 const cupangAlphabetToLocalAlphabet = (sentence) => {
-    if (!sentence) {
-        console.log("Cupang is Null")
-        return
-    }
     sentence = sentence.toUpperCase()
     let convertedSentence = ""
     let split = sentence.split(" ")
@@ -46,9 +37,9 @@ if (!mode || !input) {
     process.exit(1)
 }
 
-if (mode === 'local-to-cupang') {
+if (mode === "local-to-cupang") {
     localAlphabetToCupangAlphabet(input)
-} else if (mode === 'cupang-to-local') {
+} else if (mode === "cupang-to-local") {
     cupangAlphabetToLocalAlphabet(input)
 } else {
     console.log("Invalid mode. Use 'local-to-cupang' or 'cupang-to-local'")
