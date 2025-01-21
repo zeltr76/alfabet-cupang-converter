@@ -2,12 +2,12 @@
 
 ## Overview
 
-Halo, silakan baca dan pahami sendiri fungsinya apa.
+Halo.
 
 ## Prerequisites
 
--   Node.js (16 or higher)
--   Git (if you want to clone the repository otherwise just download the zip)
+-   Linux, unless you want to compile the file yourself to Windows (exe).
+-   Git (if you want to clone the repository otherwise just download the zip).
 
 ## Installation
 
@@ -18,18 +18,14 @@ git clone https://github.com/zeltr76/alfabet-cupang-converter.git
 cd alfabet-cupang-converter
 ```
 
-2. Cek instalasi Node.js
-
-```bash
-node --version
-```
+2. Look for `main`
 
 ## Usage
 
 ### Command-Line Syntax
 
 ```bash
-node index.js <mode> <sentence>
+./main <mode> "<sentence>"
 ```
 
 ### Modes
@@ -42,13 +38,7 @@ node index.js <mode> <sentence>
 #### Convert Local Alphabet to Cupang Alphabet
 
 ```bash
-node index.js local-to-cupang "HELLO WORLD"
-```
-
-or
-
-```bash
-npm run convert local-to-cupang "HELLO WORLD"
+./main local-to-cupang "HELLO WORLD"
 ```
 
 #### Convert Cupang Alphabet to Local Alphabet
@@ -56,19 +46,9 @@ npm run convert local-to-cupang "HELLO WORLD"
 Use '|' to separate words
 
 ```bash
-node index.js cupang-to-local "BLUK BULKBUL BULBUL BLUK BLUKBULBLUK | BULKBLUK BLUK BUL BLUK BLUBBUL"
-```
-
-or
-
-```bash
-npm run convert cupang-to-local "BLUK BULKBUL BULBUL BLUK BLUKBULBLUK | BULKBLUK BLUK BUL BLUK BLUBBUL"
+./main cupang-to-local "BLUK BULKBUL BULBUL BLUK BLUKBULBLUK | BULKBLUK BLUK BUL BLUK BLUBBUL"
 ```
 
 ## Troubleshooting
 
-Kalo salah, cek spelling-nya.
-
-## Dictionary
-
-Definisi CUPANG dan LOCAL diambil dari `dict.js`.
+If it returns **0**, it means you have spelling error.
