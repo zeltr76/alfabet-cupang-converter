@@ -31,7 +31,7 @@ node --version
 ### Command-Line Syntax
 
 ```bash
-node index.js <mode> <sentence>
+npm run convert <mode> "<sentence>"
 ```
 
 ### Modes
