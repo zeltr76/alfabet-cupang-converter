@@ -2,12 +2,14 @@
 
 ## Overview
 
-Halo, silakan baca dan pahami sendiri fungsinya apa.
+Halo, ini merupakan script untuk melakukan konversi Alfabet Cupang ke Alfabet atau sebaliknya. Ini dibuat dengan dasar "hanya untuk bersenang-senang".
+
+<img src="./img/alfabet_cupang.jpg" alt="Alfabet Cupang" style="max-height: 400px;">
 
 ## Prerequisites
 
--   Node.js (16 or higher)
--   Git (if you want to clone the repository otherwise just download the zip)
+- Node.js (18 or higher)
+- Git (if you want to clone the repository otherwise just download the zip)
 
 ## Installation
 
@@ -34,18 +36,18 @@ node index.js <mode> <sentence>
 
 ### Modes
 
--   `local-to-cupang`: Convert from Local Alphabet to Cupang Alphabet
--   `cupang-to-local`: Convert from Cupang Alphabet to Local Alphabet
+- `local-to-cupang`: Convert from Local Alphabet to Cupang Alphabet
+- `cupang-to-local`: Convert from Cupang Alphabet to Local Alphabet
 
 ### Examples
 
 #### Convert Local Alphabet to Cupang Alphabet
 
 ```bash
-node index.js local-to-cupang "HELLO WORLD"
+node src/index.js local-to-cupang "HELLO WORLD"
 ```
 
-or
+or **(recommended)**
 
 ```bash
 npm run convert local-to-cupang "HELLO WORLD"
@@ -53,13 +55,13 @@ npm run convert local-to-cupang "HELLO WORLD"
 
 #### Convert Cupang Alphabet to Local Alphabet
 
-Use '|' to separate words
+Use '|' to separate words and a space in before and after.
 
 ```bash
-node index.js cupang-to-local "BLUK BULKBUL BULBUL BLUK BLUKBULBLUK | BULKBLUK BLUK BUL BLUK BLUBBUL"
+node src/index.js cupang-to-local "BLUK BULKBUL BULBUL BLUK BLUKBULBLUK | BULKBLUK BLUK BUL BLUK BLUBBUL"
 ```
 
-or
+or **(recommended)**
 
 ```bash
 npm run convert cupang-to-local "BLUK BULKBUL BULBUL BLUK BLUKBULBLUK | BULKBLUK BLUK BUL BLUK BLUBBUL"
@@ -67,8 +69,8 @@ npm run convert cupang-to-local "BLUK BULKBUL BULBUL BLUK BLUKBULBLUK | BULKBLUK
 
 ## Troubleshooting
 
-Kalo salah, cek spelling-nya.
+Kalo salah, cek spelling pada masing-masing Alfabet.
 
 ## Dictionary
 
-Definisi CUPANG dan LOCAL diambil dari `dict.js`.
+Definisi `CUPANG` dan `LOCAL` diambil dari `src/dict.js`.
