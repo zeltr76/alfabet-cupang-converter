@@ -4,7 +4,7 @@
 
 Halo, ini merupakan script untuk melakukan konversi Alfabet Cupang ke Alfabet atau sebaliknya. Ini dibuat dengan dasar "hanya untuk bersenang-senang".
 
-<img src="./img/alfabet_cupang.jpg" alt="Alfabet Cupang" style="max-height: 400px;">
+<img src="./img/alfabet_cupang.jpg" alt="Alfabet Cupang" style="height: 400px;">
 
 ## Prerequisites
 
